@@ -43,7 +43,7 @@ const Intro = () => {
           </motion.span>
         </div>
       </div>
-      <motion.p
+      <motion.h1
         className="text-center pt-4 m-6 text-xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
@@ -54,22 +54,24 @@ const Intro = () => {
         <strong> build </strong>blockchain applications that improve the way we
         live and solves problems to maximise our utility and productivity.{" "}
         <br />
-      </motion.p>
+      </motion.h1>
       <motion.div
-        className="flex items-center justify-center space-x-4"
+        className="flex flex-col sm:flex-row items-center justify-center space-x-4 gap-2"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.1 }}
       >
         <Link
           href="#contact"
-          className="bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full"
+          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
         >
-          Contact me here <BsArrowRight />
+          Contact me here{" "}
+          <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
         <a
           href="https://www.linkedin.com/in/timothy-kwan-b8758087/"
           target="_blank"
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full"
+          className="bg-white p-4 text-gray-700 text-[1.3rem] flex items-center gap-2 rounded-full border border-black/10 outline-none focus:scale-110 hover:scale-110 active:scale-105 transition"
         >
           {" "}
           <BsLinkedin />
@@ -77,7 +79,7 @@ const Intro = () => {
         <a
           href="https://github.com/Soros87"
           target="_blank"
-          className="bg-white p-4 text-gray-700 text-[1.3rem] flex items-center gap-2 rounded-full"
+          className="bg-white p-4 text-gray-700 text-[1.3rem] flex items-center gap-2 rounded-full border border-black/10 outline-none focus:scale-110 hover:scale-110 active:scale-105 transition"
         >
           {" "}
           <FaGithubSquare />
