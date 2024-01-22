@@ -2,9 +2,10 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import loginPage from "@/public/LoginPage.png";
+import infiniteNested from "@/public/infiniteNested.png";
+import miniblockprojects from "@/public/Miniblockprojects.png";
+import TelegramBot from "@/public/TelegramBot.png";
 
 export const links = [
   {
@@ -23,10 +24,10 @@ export const links = [
     name: "Skills",
     hash: "#skills",
   },
-  {
-    name: "Experience",
-    hash: "#experience",
-  },
+  // {
+  //   name: "Experience",
+  //   hash: "#experience",
+  // },
   {
     name: "Contact",
     hash: "#contact",
@@ -62,25 +63,45 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Social Media",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "Social media MERN full stack web application using React and mongoDB.",
+    tags: [
+      "React",
+      "Redux",
+      "MongoDB",
+      "Tailwind",
+      "IT security",
+      "nodemailer",
+      "Express Node JS",
+      "Javascript",
+      "Postman",
+    ],
+    imageUrl: loginPage,
+    githubLink: "https://github.com/Soros87/project_socialmediaapp",
   },
   {
-    title: "rmtDev",
-    description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+    title: "Infinite nested comment post",
+    description: "Infinite nested comment",
+    tags: ["Javascript", "Recursion algo", "Tailwind"],
+    imageUrl: infiniteNested,
+    githubLink: "https://github.com/Soros87/test_infinite_nested_comments",
   },
   {
-    title: "Word Analytics",
+    title: "Understanding blockchain",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "List of mini projects to learn about how blockchain works in ethereum",
+    tags: ["Ether JS", "Web3 JS", "Tailwind", "React JS"],
+    imageUrl: miniblockprojects,
+    githubLink: "https://github.com/Soros87/project_mywebpage",
+  },
+  {
+    title: "Personal Telegram Bot",
+    description:
+      "Search message in chat group with Party A and forward message to Party B",
+    tags: ["Python", "Telegram API"],
+    imageUrl: TelegramBot,
+    githubLink: "https://github.com/Soros87/telegram-bot-personal",
   },
 ] as const;
 

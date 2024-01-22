@@ -9,7 +9,7 @@ export default function About() {
   return (
     <motion.section
       ref={ref}
-      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
+      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-0 scroll-mt-28"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
@@ -37,8 +37,8 @@ export default function About() {
         software/web/blockchain developer.😄
       </p>
       <p>
-        <span className="italic">When I'm not coding</span>, I like to do
-        calisthenics and I'm currently training to do a muscle up 💪.
+        <span className="italic">In my free time</span>, I practice calisthenics
+        and I'm currently training to do a muscle up 💪.
       </p>
     </motion.section>
   );
