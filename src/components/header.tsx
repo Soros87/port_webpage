@@ -9,7 +9,8 @@ import clsx from "clsx";
 import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function Header() {
-  const { activeSection } = useActiveSectionContext();
+  const { activeSection, setActiveSection, setTimeOfLastClick } =
+    useActiveSectionContext();
   const [toggleMenu, setToggleMenu] = useState(false);
   const linksRef = useRef<{ [key: string]: HTMLAnchorElement }>({});
 
@@ -89,6 +90,10 @@ export default function Header() {
                     "flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition",
                     { "text-gray-950": activeSection === link.name }
                   )}
+                  onClick={() => {
+                    setActiveSection(link.name);
+                    setTimeOfLastClick(Date.now());
+                  }}
                 >
                   {link.name}
                   {link.name === activeSection && (

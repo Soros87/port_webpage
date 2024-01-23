@@ -1,11 +1,11 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
 import loginPage from "@/public/LoginPage.png";
 import infiniteNested from "@/public/infiniteNested.png";
 import miniblockprojects from "@/public/Miniblockprojects.png";
 import TelegramBot from "@/public/TelegramBot.png";
+import { LuGraduationCap } from "react-icons/lu";
+import { CgWorkAlt } from "react-icons/cg";
+import { TbMoodLookRight } from "react-icons/tb";
 
 export const links = [
   {
@@ -24,10 +24,10 @@ export const links = [
     name: "Skills",
     hash: "#skills",
   },
-  // {
-  //   name: "Experience",
-  //   hash: "#experience",
-  // },
+  {
+    name: "Experience",
+    hash: "#experience",
+  },
   {
     name: "Contact",
     hash: "#contact",
@@ -36,28 +36,36 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Graduated in Accountancy",
+    location: "Singapore",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "After graduating from college, I started my career in audit profession.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2012-2023",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Early-Mid Career",
+    location: "Singapore",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "I worked in multiple accounting roles mainly Controlling, Finance Planning & Analysis, Finance Business Partner and Supply Chain Finance.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "2012 - 2023",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Graduated part time ICT degree",
+    location: "Singapore",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "During my career, I studied a part time ICT degree at the Singapore University of Social Sciences to pursue my interest in tech.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2017-2022",
+  },
+  {
+    title: "Mid Career Switch",
+    location: "Singapore",
+    description:
+      "I am currently in the midst of doing a mid career switch to a tech-oriented role preferably in blockchain or robotic process automation",
+    icon: React.createElement(TbMoodLookRight),
+    date: "late 2023 - present",
   },
 ] as const;
 
@@ -122,4 +130,6 @@ export const skillsData = [
   "PostgreSQL",
   "Python",
   "Framer Motion",
+  "POWER BI",
+  "UiPath",
 ] as const;
