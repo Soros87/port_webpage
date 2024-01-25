@@ -31,7 +31,7 @@ export default function Header() {
         if (el) linksRef.current[hash] = el;
       }}
       onClick={() => setToggleMenu(false)}
-      className="flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition"
+      className="flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition dark:text-gray-400 dark:hover:text-gray-300 hover:underline"
     >
       <li className={`mx-4 cursor-pointer ${classprops}`}>{title}</li>
     </Link>
@@ -60,7 +60,7 @@ export default function Header() {
                 <li className="text-xl w-full my-2">
                   <AiOutlineClose
                     onClick={() => setToggleMenu(false)}
-                    className="text-gray-500"
+                    className="text-gray-500 cursor-pointer"
                   />
                 </li>
                 {links.map((link, index) => (
@@ -87,7 +87,7 @@ export default function Header() {
                 <Link
                   href={link.hash}
                   className={clsx(
-                    "flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition",
+                    "flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition dark:text-gray-500",
                     { "text-gray-950": activeSection === link.name }
                   )}
                   onClick={() => {

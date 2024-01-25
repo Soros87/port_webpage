@@ -17,7 +17,7 @@ export default function Projects() {
       transition={{ delay: 0.175 }}
       id="projects"
     >
-      <SectionHeading>Projects</SectionHeading>
+      <SectionHeading>Mini Projects</SectionHeading>
       <div>
         {projectsData.map((project, index) => (
           <React.Fragment key={index}>
