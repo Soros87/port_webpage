@@ -10,27 +10,27 @@ import { TbMoodLookRight } from "react-icons/tb";
 export const links = [
   {
     name: "Home",
-    hash: "tim-portfolio-website.netlify.app/#home",
+    hash: "#home",
   },
   {
     name: "About",
-    hash: "tim-portfolio-website.netlify.app/#about",
+    hash: "#about",
   },
   {
     name: "Projects",
-    hash: "tim-portfolio-website.netlify.app/#projects",
+    hash: "#projects",
   },
   {
     name: "Skills",
-    hash: "tim-portfolio-website.netlify.app/#skills",
+    hash: "#skills",
   },
   {
     name: "Experience",
-    hash: "tim-portfolio-website.netlify.app/#experience",
+    hash: "#experience",
   },
   {
     name: "Contact",
-    hash: "tim-portfolio-website.netlify.app/#contact",
+    hash: "#contact",
   },
 ] as const;
 
