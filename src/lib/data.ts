@@ -3,6 +3,7 @@ import loginPage from "@/public/LoginPage.png";
 import infiniteNested from "@/public/infiniteNested.png";
 import miniblockprojects from "@/public/Miniblockprojects.png";
 import TelegramBot from "@/public/TelegramBot.png";
+import LoginDemo from "@/public/Login-demo.png";
 import { LuGraduationCap } from "react-icons/lu";
 import { CgWorkAlt } from "react-icons/cg";
 import { TbMoodLookRight } from "react-icons/tb";
@@ -110,6 +111,13 @@ export const projectsData = [
     tags: ["Python", "Telegram API"],
     imageUrl: TelegramBot,
     githubLink: "https://github.com/Soros87/telegram-bot-personal",
+  },
+  {
+    title: "Login-demo",
+    description: "Demo for custom login, Next-Auth Google and Facebook login ",
+    tags: ["MongoDB", "Next-Auth"],
+    imageUrl: LoginDemo,
+    githubLink: "https://github.com/Soros87/login-nextjs-typescript",
   },
 ] as const;
 
