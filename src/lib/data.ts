@@ -115,7 +115,7 @@ export const projectsData = [
   {
     title: "Login-demo",
     description: "Demo for custom login, Next-Auth Google and Facebook login ",
-    tags: ["MongoDB", "Next-Auth"],
+    tags: ["MongoDB", "Next-Auth", "Typescript"],
     imageUrl: LoginDemo,
     githubLink: "https://github.com/Soros87/login-nextjs-typescript",
   },
